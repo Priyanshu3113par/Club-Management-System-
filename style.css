@@ -1,0 +1,382 @@
+
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+body {
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  background: #2c2c75;
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #FFD700;
+}
+
+.announcement {
+  background-color: #f3f4f6;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+.announcement h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.announcement-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.announcement-content img {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-content p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+
+/* Hero Section */
+.hero {
+  background: url('/campus7.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero .buttons a {
+  display: inline-block;
+  padding: 12px 30px;
+  margin: 10px;
+  color: white;
+  background: #FF5C5C;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.hero .buttons a:hover {
+  background: #E74C4C;
+}
+
+/* Why Join Us Section */
+.why-join {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.why-join h2 {
+  font-size: 36px;
+  color: #2c2c75;
+  margin-bottom: 20px;
+}
+
+.why-join p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card i {
+  font-size: 50px;
+  color: #FF5C5C;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Clubs Section */
+/* Clubs Section */
+.clubs-section {
+  background: linear-gradient(to right, #f8f9fa, #e8f0ff);
+  padding: 60px 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.clubs-section h2 {
+  font-size: 42px;
+  color: #2c2c75;
+  margin-bottom: 10px;
+  animation: slideInDown 1s ease-in-out;
+}
+
+.clubs-section p {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 40px;
+  animation: slideInDown 1.2s ease-in-out;
+}
+
+.clubs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.club-card {
+  background: linear-gradient(to bottom, #FF5C5C, #FF8C69);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.club-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
+}
+
+.club-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain; /* 👈 Keeps image fully visible without cropping */
+  padding: 10px; /* 👈 Adds breathing space inside the card */
+  border-radius: 10px 10px 0 0;
+  background-color: #fff; /* Optional: white background for consistent look */
+}
+
+
+.club-card:hover img {
+  transform: scale(1.05);
+}
+
+.club-card h3 {
+  font-size: 20px;
+  margin: 15px 0;
+  color: #222;
+  text-align: center;
+  min-height: 48px; /* Ensures equal height even if names vary */
+}
+
+.club-card a {
+  display: block;
+  padding: 15px;
+  color: white;
+  background: transparent; /* Already covered by the gradient */
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.club-card a:hover {
+  transform: scale(1.03);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+@keyframes slideInDown {
+  from { transform: translateY(-30px); opacity: 0 }
+  to { transform: translateY(0); opacity: 1 }
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(30px); opacity: 0 }
+  to { transform: translateY(0); opacity: 1 }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.9); opacity: 0 }
+  to { transform: scale(1); opacity: 1 }
+}
+
+
+/* Contact Us Section */
+.contact-section {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  color: #2c2c75;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.contact-form form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  color: white;
+  background: #2c2c75;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #2c2c75;
+}
+
+/* Footer */
+footer {
+  background: #2c2c75;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.footer-section a {
+  color: #FFD700;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #FFA500;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+}

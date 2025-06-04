@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life @MIT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        /* Announcement Bar Styles */
+        .announcement-bar {
+          background-color: #ffc107;
+          color: #000;
+          padding: 10px 20px;
+          position: fixed;
+          top: 0;
+          width: 100%;
+          z-index: 1000;
+          font-weight: bold;
+          overflow: hidden;
+          border-bottom: 2px solid #333;
+        }
+    
+        .announcement-text {
+          display: inline-block;
+          white-space: nowrap;
+          animation: scroll-left 12s linear infinite;
+        }
+    
+        @keyframes scroll-left {
+          0% {
+            transform: translateX(100%);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+    
+        </style>
+</head>
+<body>
+ <header>
+        <div class="navbar">
+            <div class="logo">LIFE @MIT</div>
+            <nav>
+                <a href="#home">HOME</a>
+                <a href="#why-join">WHY JOIN US</a>
+                <a href="#clubs">CLUBS</a>
+                <a href="#contact">CONTACT US</a>   <!-- Updated link -->
+            </nav>
+        </div>
+    </header>
+    
+   <!-- Announcement Button + Bar -->
+<!-- Announcement Bar -->
+<div style="display: flex; align-items: center; background-color: #f1f1f1; padding: 8px 16px; font-family: Arial, sans-serif;">
+    <div style="background-color: #f7c948; color: white; font-weight: bold; padding: 6px 12px; border-radius: 4px 0 0 4px;">
+      Announcement
+    </div>
+    <marquee scrollamount="20" style="margin-left: 10px; color: #007bff; font-weight: 500;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0b2NzNQIGZUDuakBFi9v8d3rGcvU_WWCAFlVfC82dLaGyaw/closedform?pli=1" style="color: #007bff; text-decoration: none; margin-right: 20px;">
+        Registrations open for Nirmaan 2.0 !
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="New" width="16" style="vertical-align: middle;">
+      </a>
+      <a href="https://meet.google.com/zhy-qhuk-tcx" style="color: #007bff; text-decoration: none; margin-right: 20px;">
+        Datathon 2025 Orientation Session – Join Us Today!
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="New" width="16" style="vertical-align: middle;">
+      </a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfSHsXkhrwKVK5Gy2vMgl2itlfdWVrXkq_jiKaocdPeSDd7xg/closedform" style="color: #007bff; text-decoration: none;">
+        Don’t Miss Out! Registration Ends at 9 PM Today – CodeSprint & Pair Programming
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="New" width="16" style="vertical-align: middle;">
+      </a>
+    </marquee>
+  </div>
+  
+  
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="overlay">
+        <h1>LET'S GROW TOGETHER</h1>
+        <p>We Believe In Collaboration Over Competition</p>
+        <div class="buttons">
+            <a href="#why-join">Why Join Us?</a>
+            <a href="#clubs">Explore Clubs</a>
+        </div>
+    </div>
+</section>
+
+<!-- Why Join Us Section -->
+<section id="why-join" class="why-join">
+    <h2>Why Join Us?</h2>
+    <p>Here are Some More Reasons?</a></p>
+
+    <div class="cards-container">
+        <div class="card">
+            <i class="fa-solid fa-user"></i>
+            <h3>LEARN MORE ABOUT YOURSELF</h3>
+            <p>Joining a club presents many opportunities to learn more about yourself. You will be able to discover your passion, your skills and experiment with areas of expertise. This self-awareness will be beneficial in your future career.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-trophy"></i>
+            <h3>DEVELOP SOFT SKILLS</h3>
+            <p>Soft skills allow us to effectively interact with others, like communication, attitude, and work ethics. Participating in club improves these skills. You will gain emotional intelligence as you develop new relationships.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-users"></i>
+            <h3>EXPAND YOUR NETWORK</h3>
+            <p>Joining a club enables you to connect to a peer groups who shares similar interests as you. This can be an amazing platform to meet potential employers. These connections will be invaluable for you in the near future. </p>
+        </div>
+    </div>
+</section>
+
+<!-- Clubs Section -->
+<section id="clubs" class="clubs-section">
+    <h2>Our Clubs</h2>
+    <p>MIT Has Various Technical, Cultural, Social Clubs</p>
+
+    <div class="clubs-container">
+
+        
+
+        <!-- CodeChef Club -->
+        <div class="club-card">
+            <a href="/clubs/Codechef.html">
+                <img src="/Images/CodeChef MITAOE CHAPTER.jpg" alt="CodeChef Club">
+                <h3>CodeChef Club</h3>
+                
+            </a>
+            
+        </div>
+
+        <!-- GDSC Club -->
+        <div class="club-card">
+            <a href="/clubs/GDG.html">
+                <img src="/Images/GOOGLE DEVELOPER STUDENT CLUB.png" alt="GDG">
+                <h3>GDG Club</h3>
+            </a>
+        </div>
+
+        <!-- Shutterbug -->
+        <div class="club-card">
+            <a href="/clubs/shutterbug.html">
+                <img src="/Images/shutterbug.png" alt="shutterbug">
+                <h3>Shutterbug Club</h3>
+            </a>
+        </div>
+
+        <div class="club-card">
+            <a href="/clubs/niyudrath.html">
+                <img src="/Images/TEAM NIYUDRATH RACING (TNR) - AUTOSPORTS CLUB.jpg" alt="TNR">
+                <h3>Team Niyudrath Club</h3>
+            </a>
+        </div>
+
+        <div class="club-card">
+            <a href="/clubs/spiritual.html">
+                <img src="/Images/eparatua-mins.png" alt="spirtual">
+                <h3>Spiritual Minds Club</h3>
+            </a>
+        </div>
+
+        <div class="club-card">
+            <a href="/clubs/girlscript.html">
+                <img src="/Images/girlscript.jpg" alt="gs">
+                <h3>Girlscript Club</h3>
+            </a>
+        </div>
+
+        <div class="club-card">
+            <a href="/clubs/aALEKHart.html">
+                <img src="/Images/AALEKH- Art Elated Club.jpg" alt="aalekh">
+                <h3>AALEKH- Art Elated Club</h3>
+            </a>
+        </div>
+
+        
+        <div class="club-card">
+            <a href="/clubs/foreignclub.html">
+                <img src="/Images/foreign-language-club-new.png" alt="foreign">
+                <h3>Foreign Language Club</h3>
+            </a>
+        </div>
+
+        <div class="club-card">
+            <a href="/clubs/Drama.html">
+                <img src="/Images/DRAMA CLUB.jpg" alt="drama">
+                <h3>Drama Club</h3>
+            </a>
+        </div>
+
+        <div class="club-card">
+            <a href="/clubs/goonj.html">
+                <img src="/Images/goonj.jpg" alt="goonj">
+                <h3>Goonj Club</h3>
+            </a>
+        </div>
+
+        <div class="club-card">
+            <a href="/clubs/ignitedMind.html">
+                <img src="/Images/ignitedminds.jpg" alt="ignited">
+                <h3>Ignited MindsClub</h3>
+            </a>
+        </div>
+
+        <div class="club-card">
+            <a href="/clubs/Literary.html">
+                <img src="/Images/literaryclub.png" alt="liteary">
+                <h3>Literary Club</h3>
+            </a>
+        </div>
+
+        <div class="club-card">
+            <a href="/clubs/Aero.html">
+                <img src="/Images/MITAOE Aero.jpg" alt="aero">
+                <h3>MITAOE Aero Club</h3>
+            </a>
+        </div>
+
+
+        <div id="dynamic-clubs-placeholder"></div>
+
+
+        
+
+    </div>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>We Are Here To Help And Answer Any Questions You Might Have. <br> We Are Looking Forward To Hear From You.</p>
+    
+    <div class="contact-form">
+        <form id="contactForm">
+            <input type="hidden" name="access_key" value="45cd4b09-c395-4402-b6ac-2cd1e75e792d">
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email ID" required>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter Your Mobile No" required>
+            <textarea id="message" name="message" placeholder="Enter Your Message" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>About MIT</h3>
+            <p>The MIT Academy of Engineering is an autonomous institute of engineering in Pune, India.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Navigation Links</h3>
+            <a href="/admin/admin-login.html">Admin Login</a>
+            <a href="#home">Home</a>
+            <a href="#clubs">Clubs</a>
+            <a href="#why-join">About</a>
+            <a href="contact.html">Contact Us</a>
+            
+        </div>
+
+        <div class="footer-section">
+            <h3>Developed By</h3>
+            <p>Umesh Munde</p>
+            <p>Priyanshu Parate</p>
+            <p>Anvita Linkar</p>
+        </div>
+    </div>
+    <p class="footer-bottom">© 2025 MIT. All rights reserved.</p>
+</footer>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", async function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        let formData = new FormData(this);
+
+        // Convert form data to JSON
+        let jsonData = {};
+        formData.forEach((value, key) => jsonData[key] = value);
+
+        // Store in localStorage for Admin Panel
+        let feedbacks = JSON.parse(localStorage.getItem("feedbacks")) || [];
+        feedbacks.push(jsonData);
+        localStorage.setItem("feedbacks", JSON.stringify(feedbacks));
+
+        // Send data to Web3Forms (Email)
+        let response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        let result = await response.json();
+        if (result.success) {
+            alert("Your message has been sent successfully!");
+            this.reset();
+        } else {
+            alert("Error sending message. Please try again.");
+        }
+    });
+    function loadDynamicClubs() {
+        const placeholder = document.getElementById("dynamic-clubs-placeholder");
+        const clubs = JSON.parse(localStorage.getItem("clubs")) || [];
+
+        clubs.forEach(club => {
+            const card = document.createElement("div");
+            card.className = "club-card";
+            card.innerHTML = `
+                <a href="/clubs/club-details.html?name=${encodeURIComponent(club.name)}">
+                    <img src="${club.logo}" alt="${club.name}">
+                    <h3>${club.name}</h3>
+                </a>
+            `;
+            placeholder.parentNode.insertBefore(card, placeholder.nextSibling);
+        });
+    }
+
+    window.addEventListener("DOMContentLoaded", loadDynamicClubs);
+
+
+    
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
